@@ -20,12 +20,6 @@
 - name: include ceph_disk_cli_options_facts.yml
   include_tasks: ceph_disk_cli_options_facts.yml
 
-<<<<<<< HEAD
-- name: include build_devices.yml
-  include_tasks: build_devices.yml
-
-=======
->>>>>>> osd: initial introduction of choose_disk
 - name: read information about the devices
   parted:
     device: "{{ item }}"
