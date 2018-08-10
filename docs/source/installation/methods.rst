@@ -17,7 +17,8 @@ If ``ceph_origin`` is set to ``repository``, you now have the choice between a c
 - ``community``: fetches packages from http://download.ceph.com, the official community Ceph repositories
 - ``rhcs``: means you are a Red Hat customer, additionally you will have to select a repository type through ``ceph_repository_type`` (``cdn`` or ``iso``)
 - ``dev``: fetches packages from shaman, a gitbuilder based package system
-- ``uca``: fetches packages from Ubuntu Cloud Archive
+- ``uca``: fetches packages from `Ubuntu Cloud Archive
+  <https://wiki.ubuntu.com/OpenStack/CloudArchive>`_
 - ``custom``: fetches packages from a specific repository
 
 Community repository
