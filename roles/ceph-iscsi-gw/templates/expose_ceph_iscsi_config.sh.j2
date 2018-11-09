@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -xe
+
+if [ -f /run/ostree-booted ]; then
+    if ! ostree admin status | grep -sq "Unlocked: hotfix"; then
+        ostree admin unlock --hotfix
+    fi
+fi
+
+{% raw %}
+ln -sf /proc/$(docker inspect --format {{.State.Pid}} rbd-target-api)/root/usr/lib/python2.7/site-packages/ceph_iscsi_config /usr/lib/python2.7/site-packages/
+{% endraw %}
